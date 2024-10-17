@@ -12,7 +12,7 @@ struct Player {
     string skill;
 };
 
-// 随机返回训练是否成功，成功的几率为50%
+// 随机返回训练是否成功
 bool isTrainingSuccessful(int choice) {
     switch (choice) {
         case 1:
@@ -29,14 +29,15 @@ bool isTrainingSuccessful(int choice) {
 int main() {
     Player player;
     player.id = 0; // 玩家ID
-    player.hp = rand() % 13 + 12; // HP随机值在[12, 24]之间
-    player.atk = rand() % 9 + 8; // ATK随机值在[8, 16]之间
-    player.def = rand() % 5 + 4; // DEF随机值在[4, 8]之间
-    player.skill = "None"; // 初始技能为None
 
     cout << "Player ID: ";
     cin >> player.id;
     srand(player.id); // 使用id初始化随机数种子
+
+    player.hp = rand() % 13 + 12; // HP随机值在[12, 24]之间
+    player.atk = rand() % 9 + 8; // ATK随机值在[8, 16]之间
+    player.def = rand() % 5 + 4; // DEF随机值在[4, 8]之间
+    player.skill = "None"; // 初始技能为None
 
     cout << "Player Status: HP " << player.hp << ", ATK " << player.atk << ", DEF " << player.def << ", Skill: " <<
             player.skill << endl;
