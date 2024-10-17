@@ -35,7 +35,7 @@ int main() {
     srand(player.id); // 使用id初始化随机数种子
 
     player.hp = rand() % 13 + 12; // HP随机值在[12, 24]之间
-    player.atk = rand() % 9 + 8; // ATK随机值在[8, 16]之间
+    player.atk = rand() % 7 + 6; // ATK随机值在[6, 12]之间
     player.def = rand() % 5 + 4; // DEF随机值在[4, 8]之间
     player.skill = "None"; // 初始技能为None
 
