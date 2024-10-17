@@ -34,7 +34,7 @@ int main() {
     // 不断转换，直到结果为123
     while (number != 123) {
         number = transform(number);  // 转换数字
-        cout << " -> " << number;    // 输出转换后的结果
+        cout << "->" << number;    // 输出转换后的结果
     }
 
     cout << endl;  // 换行
