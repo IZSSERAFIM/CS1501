@@ -1,0 +1,11 @@
+ID	Name	HP	ATK	DEF
+1	Ashley	73	27	19
+2	Leon	66	27	29	healer
+3	Barry	62	26	11
+4	Benson	61	16	28
+5	May	    84	24	21
+6	Albert	98	27	29
+7	Bruce	86	22	23
+8	Joyce	63	23	18
+9	Paul	79	27	16	healer
+10	Ivy	    86	29	28
