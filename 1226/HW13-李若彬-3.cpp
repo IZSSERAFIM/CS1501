@@ -63,7 +63,7 @@ void modifyRecord(fstream &file, const string &name, int field, const string &va
 }
 
 int main() {
-    string filename = "save"; // 假设存档文件名为save
+    string filename = "save";
     fstream file(filename, ios::binary | ios::in | ios::out);
 
     if (!file) {
